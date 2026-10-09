@@ -1,0 +1,12 @@
+{
+  "domain": "refill",
+  "name": "RE.FILL",
+  "codeowners": [],
+  "config_flow": true,
+  "documentation": "https://github.com/iamswift/refill-homeassistant",
+  "integration_type": "service",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/iamswift/refill-homeassistant/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

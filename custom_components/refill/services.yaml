@@ -1,0 +1,6 @@
+sync_now:
+  name: Sync now
+  description: >-
+    Read consumable levels and send them to RE.FILL immediately, instead of
+    waiting for the next hourly report. Useful straight after swapping
+    batteries, and for checking that pairing worked.

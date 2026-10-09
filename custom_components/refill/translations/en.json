@@ -1,0 +1,35 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Pair with RE.FILL",
+        "description": "Open RE.FILL, choose Home Assistant, and copy the pairing code it shows you. This integration only sends data out — it never accepts a connection in, and it does not need a Home Assistant access token.",
+        "data": {
+          "pairing_code": "Pairing code",
+          "base_url": "RE.FILL address"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Pair with RE.FILL again",
+        "description": "This hub was unpaired. Get a new pairing code from RE.FILL to start sending levels again — your device history is kept.",
+        "data": {
+          "pairing_code": "Pairing code"
+        }
+      }
+    },
+    "error": {
+      "invalid_code": "That code was not accepted. Codes last 10 minutes and work once — get a fresh one from RE.FILL.",
+      "cannot_connect": "Could not reach RE.FILL. Check this machine's internet connection and try again."
+    },
+    "abort": {
+      "already_configured": "This hub is already paired with RE.FILL.",
+      "reauth_successful": "Pairing restored."
+    }
+  },
+  "services": {
+    "sync_now": {
+      "name": "Sync now",
+      "description": "Read consumable levels and send them to RE.FILL immediately."
+    }
+  }
+}
