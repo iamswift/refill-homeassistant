@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" role="img" aria-labelledby="t d" font-family="-apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <title id="t">Three steps to connect Home Assistant to RE.FILL</title>
+  <desc id="d">Step 1: download RE.FILL in HACS. Step 2: restart Home Assistant. Step 3: add the RE.FILL integration and paste the pairing code.</desc>
+  <rect width="960" height="300" rx="16" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="959" height="299" rx="16" fill="none" stroke="#d0d7de"/>
+
+  <!-- Step 1 -->
+  <g transform="translate(40 40)">
+    <rect width="240" height="220" rx="14" fill="#f6f8fa" stroke="#d0d7de"/>
+    <circle cx="36" cy="36" r="18" fill="#03a9f4"/>
+    <text x="36" y="42" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">1</text>
+    <text x="64" y="42" font-size="18" font-weight="700" fill="#1f2328">Download</text>
+    <rect x="24" y="72" width="192" height="56" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+    <rect x="36" y="86" width="28" height="28" rx="6" fill="#41bdf5"/>
+    <text x="76" y="98" font-size="14" font-weight="700" fill="#1f2328">RE.FILL</text>
+    <text x="76" y="116" font-size="12" fill="#57606a">in HACS</text>
+    <rect x="24" y="144" width="192" height="36" rx="18" fill="#03a9f4"/>
+    <text x="120" y="167" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Download</text>
+    <text x="120" y="204" text-anchor="middle" font-size="12" fill="#57606a">One click from the button below</text>
+  </g>
+
+  <path d="M292 150 h44" stroke="#8c959f" stroke-width="3" fill="none"/>
+  <path d="M332 142 l10 8 l-10 8" stroke="#8c959f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Step 2 -->
+  <g transform="translate(360 40)">
+    <rect width="240" height="220" rx="14" fill="#f6f8fa" stroke="#d0d7de"/>
+    <circle cx="36" cy="36" r="18" fill="#03a9f4"/>
+    <text x="36" y="42" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">2</text>
+    <text x="64" y="42" font-size="18" font-weight="700" fill="#1f2328">Restart</text>
+    <g transform="translate(120 120)">
+      <path d="M29.4 -17 A34 34 0 1 1 -2 -34" fill="none" stroke="#03a9f4" stroke-width="8" stroke-linecap="round"/>
+      <path d="M-4 -49 L16 -34 L-4 -19 Z" fill="#03a9f4"/>
+    </g>
+    <text x="120" y="204" text-anchor="middle" font-size="12" fill="#57606a">Settings → System → Restart</text>
+  </g>
+
+  <path d="M612 150 h44" stroke="#8c959f" stroke-width="3" fill="none"/>
+  <path d="M652 142 l10 8 l-10 8" stroke="#8c959f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Step 3 -->
+  <g transform="translate(680 40)">
+    <rect width="240" height="220" rx="14" fill="#f6f8fa" stroke="#d0d7de"/>
+    <circle cx="36" cy="36" r="18" fill="#03a9f4"/>
+    <text x="36" y="42" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">3</text>
+    <text x="64" y="42" font-size="18" font-weight="700" fill="#1f2328">Pair</text>
+    <text x="24" y="90" font-size="12" fill="#57606a">Pairing code</text>
+    <g font-size="20" font-weight="700" fill="#1f2328" text-anchor="middle">
+      <rect x="24" y="100" width="40" height="40" rx="6" fill="#fff6c7" stroke="#1f2328"/><text x="44" y="127">K</text>
+      <rect x="70" y="100" width="40" height="40" rx="6" fill="#fff6c7" stroke="#1f2328"/><text x="90" y="127">7</text>
+      <rect x="130" y="100" width="40" height="40" rx="6" fill="#fff6c7" stroke="#1f2328"/><text x="150" y="127">R</text>
+      <rect x="176" y="100" width="40" height="40" rx="6" fill="#fff6c7" stroke="#1f2328"/><text x="196" y="127">2</text>
+    </g>
+    <rect x="24" y="152" width="192" height="32" rx="16" fill="#03a9f4"/>
+    <text x="120" y="173" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Paste &amp; submit</text>
+    <text x="120" y="204" text-anchor="middle" font-size="12" fill="#57606a">Code from the RE.FILL website</text>
+  </g>
+</svg>

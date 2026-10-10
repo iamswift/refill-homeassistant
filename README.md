@@ -7,20 +7,92 @@ before it does.
 **It only sends.** This integration opens no port, registers no webhook and
 accepts no inbound connection. Nothing outside your house can reach it.
 
-## Install
+## Set up in 3 steps
 
-**HACS** — add `https://github.com/iamswift/refill-homeassistant` as a custom
-repository of type *Integration*, install **RE.FILL**, restart Home Assistant.
-Or use the one-click link:
-[Add to HACS](https://my.home-assistant.io/redirect/hacs_repository/?owner=iamswift&repository=refill-homeassistant&category=integration).
+![Download in HACS, restart Home Assistant, paste your pairing code](images/setup-steps.svg)
 
-**Manually** — copy `custom_components/refill` into your `config/custom_components/`
-directory and restart.
+**Before you start:** have the RE.FILL pairing screen open (it shows an
+8-character code), and make sure [HACS](#dont-have-hacs-yet) is installed in
+Home Assistant.
 
-Then **Settings → Devices & services → Add integration → RE.FILL**
-([Add integration](https://my.home-assistant.io/redirect/config_flow_start/?domain=refill)),
-and paste the pairing code RE.FILL shows you. Leave the address field at its
-default unless RE.FILL tells you otherwise.
+### 1. Download RE.FILL
+
+Click this button. It opens your own Home Assistant, straight to RE.FILL in HACS:
+
+[![Open your Home Assistant instance and open RE.FILL inside HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=iamswift&repository=refill-homeassistant&category=integration)
+
+You'll land on the RE.FILL page in HACS:
+
+<img src="images/step1-hacs-page.png" alt="The RE.FILL page in HACS" width="600">
+
+Click **Download** (bottom right), then **Download** again to confirm.
+
+> The first time you use a button like this, it asks for your Home Assistant's
+> address (for example `http://homeassistant.local:8123`). It remembers it after that.
+
+### 2. Restart Home Assistant
+
+**Settings → System →** the **⏻** button top right **→ Restart Home Assistant**.
+Wait a minute for it to come back.
+
+<img src="images/step2-restart-dialog.png" alt="The Restart Home Assistant dialog. Choose Restart Home Assistant, not Quick reload." width="420">
+
+Choose **Restart Home Assistant**. *Quick reload* is not enough.
+
+### 3. Pair with RE.FILL
+
+Click this button:
+
+[![Open your Home Assistant instance and start setting up RE.FILL.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=refill)
+
+A **Pair with RE.FILL** box opens:
+
+<img src="images/step3-pair-dialog.png" alt="The Pair with RE.FILL dialog with a Pairing code box, a RE.FILL address box and a Submit button" width="420">
+
+Paste the code from the RE.FILL pairing screen into **Pairing code** and click
+**Submit**. Leave **RE.FILL address** as it is. Within a minute, the RE.FILL screen changes from
+*Waiting for your hub…* to connected. You're done.
+
+### Something not right?
+
+| What you see | What to do |
+| --- | --- |
+| The step 1 button doesn't open HACS | Install HACS first — see below. |
+| **RE.FILL** isn't in the *Add integration* list | Restart Home Assistant (step 2), then try step 3 again. |
+| *"That code was not accepted…"* | Codes last 10 minutes and work once. Get a fresh one on the RE.FILL screen and paste it again. |
+| *"Could not reach RE.FILL…"* | Home Assistant can't reach the internet. Check its connection and try again. |
+| *"This hub is already paired with RE.FILL."* | Nothing to do — it's already connected. |
+
+<details>
+<summary><b>Don't have HACS yet?</b></summary>
+
+<a id="dont-have-hacs-yet"></a>
+HACS is a free add-on store for Home Assistant. You set it up once.
+These steps are for **Home Assistant OS** (Green, Yellow, Raspberry Pi, or a
+virtual machine). On other installs, follow
+[the HACS guide](https://hacs.xyz/docs/use/download/download/).
+
+1. **Settings → Add-ons** (called **Apps** on newer versions) **→ Add-on store**.
+2. **⋮** top right **→ Repositories**, paste `https://github.com/hacs/addons`,
+   click **Add**, then **Close**.
+3. Open **Get HACS**, click **Install**, then **Start**. Wait until its
+   **Log** tab says it's finished.
+4. Restart Home Assistant (as in step 2 above).
+5. **Settings → Devices & services → Add integration → HACS**. Tick the boxes,
+   then follow the link to GitHub and enter the code it shows you.
+6. **HACS** now appears in the sidebar. Go back to step 1.
+
+</details>
+
+<details>
+<summary><b>Prefer not to use HACS?</b></summary>
+
+Copy the `custom_components/refill` folder from this repository into your
+Home Assistant `config/custom_components/` folder (the **File editor** or
+**Samba share** add-on both work), restart, then do step 3. You won't get
+update notifications this way.
+
+</details>
 
 ## Why there is no access token
 
