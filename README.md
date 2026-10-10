@@ -1,6 +1,27 @@
 # RE.FILL for Home Assistant
 
-Sends the consumable levels Home Assistant already knows — battery percentages,
+**Never get caught by a dead battery or a clogged filter again.**
+
+[RE.FILL](https://refill-me-five.vercel.app/) tracks what your smart home runs
+out of — batteries, filters, pods, vacuum bags — and tells you before it does.
+
+- **See what runs out next.** One list of every device that needs something,
+  ordered by how soon. No more walking round the house checking.
+- **Forecasts, not guesses.** RE.FILL learns how fast each device actually uses
+  its battery or filter, and works out how many days are left.
+- **A heads-up in time to order.** You get a reminder like *"order AA by
+  Friday"* while there's still time for the delivery to arrive.
+- **Knows the part.** It works out which battery or filter each device takes,
+  so you're not hunting for model numbers.
+- **Private by design.** RE.FILL reads consumable levels and nothing else — not
+  your locks, cameras or who's home.
+- **Free, and set up in minutes.** Works alongside the apps you already use.
+
+**[Get started at RE.FILL →](https://refill-me-five.vercel.app/)**
+
+## What this integration does
+
+This integration sends the consumable levels Home Assistant already knows — battery percentages,
 filter life — out to RE.FILL, so it can tell you what runs out next and reorder
 before it does.
 
@@ -170,22 +191,14 @@ readings were facts about your house, not about the connection.
 ## Tests
 
 ```bash
-# from the root of this repository
 python3 tests/test_collector.py
-# from the monorepo (iamswift/refill_me)
-python3 agent/homeassistant/tests/test_collector.py
 ```
 
 No Home Assistant install needed — the registries are stubbed. The tests worth
 reading are the ones that put a lock, a camera and a thermostat in front of the
 collector and check that nothing comes out.
 
-## Source and license
-
-This repository is a mirror, never hand-edited. The source of truth is the
-`agent/homeassistant/` folder of
-[iamswift/refill_me](https://github.com/iamswift/refill_me); changes made here
-are overwritten on the next release.
+## License
 
 Released under the MIT license (see `LICENSE`). The license covers this
-mirrored folder only, not the rest of the RE.FILL project.
+repository only, not the rest of the RE.FILL project.
